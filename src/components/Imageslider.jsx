@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState, useRef } from "react";
-// eslint-disable-next-line react/prop-types
 const Imageslider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentIndexRef = useRef(currentIndex);
@@ -15,7 +14,7 @@ const Imageslider = ({ slides }) => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 30000);
 
-    // Cleanup interval on component unmount
+
     return () => clearInterval(intervalId);
   }, [slides.length]);
   const sliderStylesContainer = {
@@ -25,7 +24,7 @@ const Imageslider = ({ slides }) => {
   const slideStyles = {
     width: "100%",
     height: "100%",
-    // eslint-disable-next-line react/prop-types
+    
     backgroundImage: `url(${slides[currentIndex].src})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
