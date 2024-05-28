@@ -50,8 +50,6 @@ p {
   padding: 0;
 }
 
-
-
 ul {
   list-style: none;
 }
@@ -59,10 +57,18 @@ ul {
 body {
   padding: 0;
   margin: 0;
+  color: white;
   background-color: var(--main-col-4);
   font-family: "Poppins", sans-serif;
 }
 
+.our-values {
+  text-align: center;
+}
+
+.our-values h5 {
+  font-weight: 300;
+}
 .header {
   box-sizing: border-box;
   background-color: transparent;
@@ -93,6 +99,18 @@ body {
   align-items: center;
 }
 
+.grid {
+}
+.our-values h2{
+   font-size: 40px;
+   font-weight: 300;
+}
+
+.grid li {
+  border-bottom: 3px solid white;
+  padding: 40px 100px  20px;
+  font-size: 26px;
+}
 .menubar {
   background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
@@ -171,7 +189,7 @@ a:hover {
   height: 100vh;
 }
 
-footer{
+footer {
   background-color: white;
   color: black;
 }
@@ -198,7 +216,7 @@ footer{
   color: white;
 }
 
-.text-black{
+.text-black {
   color: black;
 }
 img {
@@ -206,7 +224,7 @@ img {
   height: 100%;
 }
 
-.footer-flex{
+.footer-flex {
   display: flex;
   justify-content: space-around;
 }
@@ -233,7 +251,7 @@ img {
   justify-content: center;
 }
 
-.text-box-cont{
+.text-box-cont {
   width: 80%;
   max-width: inherit;
   margin: 0 auto;
@@ -252,6 +270,19 @@ img {
   background-color: black;
 }
 
+.our-values-img-container{
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.our-values-text{
+  text-align: left;
+  padding: 0 15px;
+  margin: 0 10px;
+}
+
 /* Default state: hide hamburger menu */
 #hamburger-menu {
   visibility: hidden;
@@ -266,11 +297,8 @@ img {
   }
 }
 
-
-
-@media screen and (max-width: 900px){
-
-   .menubar {
+@media screen and (max-width: 900px) {
+  .menubar {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -288,14 +316,22 @@ img {
   }
 
 
-   .container,
+  .grid li{
+    padding: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container,
   .nav-flex {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
   }
 
-   #hamburger-menu {
+  #hamburger-menu {
     display: block;
   }
 
@@ -308,14 +344,12 @@ img {
     transition: 0.5s;
   }
 
-
-
-   .collapse-nav {
+  .collapse-nav {
     display: none;
     transition: 0.5s;
   }
 
-   .cards {
+  .cards {
     width: 100%;
     margin: 10px auto;
     max-width: 400px;
@@ -334,12 +368,18 @@ img {
 
     margin: 0 auto;
   }
-
-
 }
 
-
 @media screen and (max-width: 600px) {
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .grid li{
+    border-bottom: none;
+  }
   .menubar {
     display: flex;
     flex-direction: column;
@@ -396,6 +436,9 @@ img {
   .img-container {
     width: 400px;
   }
+
+
+
 
   .service-flex {
     display: flex;
