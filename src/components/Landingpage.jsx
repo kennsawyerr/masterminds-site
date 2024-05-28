@@ -1,8 +1,8 @@
 import Imageslider from "./Imageslider";
 const Landingpage = () => {
   const slides = [
-    { src: "src/assets/fernandina-vessel.jpg" },
-    { src: "src/assets/vessel.jpg" },
+    { src: "/fernandina-vessel.jpg" },
+    { src: "/vessel.jpg" },
   ];
 
   const containerStyles = {

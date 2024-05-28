@@ -4,7 +4,7 @@ export const services = [
     link: "/H",
     h1: "Maritime Electronics and Navigation Systems",
     paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    src: "src/assets/marine-navigation.jpeg",
+    src: "/marine-navigation.jpeg",
   },
   {
     id: "2",
@@ -12,7 +12,7 @@ export const services = [
     h1: "Maritime Communication System",
     paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique corrupti assumenda veritatis",
-    src: "src/assets/marine-communication.jpeg",
+    src: "/marine-communication.jpeg",
   },
 
   {
@@ -20,15 +20,13 @@ export const services = [
     link: "",
     h1: "Maritime Security System",
     paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Drat?",
-    src: "src/assets/marine-security.webp",
+    src: "/marine-security.webp",
   },
   {
     id: "4",
     link: "",
     h1: "Information Technology and Software",
     paragraph: "Lorem ipsum dolor t?  adipisicing elit. Drat",
-    src: "src/assets/computers.webp",
+    src: "/computers.webp",
   },
 ];
-
-
