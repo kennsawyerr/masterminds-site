@@ -266,6 +266,79 @@ img {
   }
 }
 
+
+
+@media screen and (max-width: 900px){
+
+   .menubar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 90;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: unset;
+    background-color: white;
+    color: black;
+    left: 0;
+    right: 0;
+    top: 100px;
+    max-width: 100%;
+    transition: 0.5s;
+  }
+
+
+   .container,
+  .nav-flex {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+   #hamburger-menu {
+    display: block;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .menubar li {
+    padding: 15px 0;
+    transition: 0.5s;
+  }
+
+
+
+   .collapse-nav {
+    display: none;
+    transition: 0.5s;
+  }
+
+   .cards {
+    width: 100%;
+    margin: 10px auto;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .img-container {
+    width: 400px;
+  }
+
+  .service-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+
+    margin: 0 auto;
+  }
+
+
+}
+
+
 @media screen and (max-width: 600px) {
   .menubar {
     display: flex;
@@ -273,7 +346,6 @@ img {
     position: absolute;
     z-index: 90;
     width: 100%;
-
     margin: 0 auto;
     border-radius: unset;
     background-color: white;
