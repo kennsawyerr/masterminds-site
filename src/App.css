@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --main-col-1: grey;
+  --main-col-2: #a8d6ed;
+  --main-col-3: #0031cd;
+  --main-col-4: #0e0f17;
+
+  /* font sizes */
+  --i: 4px;
+  --ii: 8px;
+  --iii: 12px;
+  --iv: 16px;
+  --v: 20px;
+  --vi: 24px;
+  --vii: 28px;
+  --viii: 32px;
+  --ix: 36px;
+  --x: 40px;
+  --xi: 44px;
+  --xii: 48px;
+  --xiii: 52px;
+  --xiv: 56px;
+  --xv: 60px;
+  --xvi: 64px;
+  --xvii: 68px;
+  --xviii: 72px;
+  --xix: 76px;
+  --xx: 80px;
+  --xxi: 84px;
+  --xxii: 88px;
+  --xxiii: 92px;
+  --xxiv: 96px;
+  --xxv: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--main-col-4);
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: transparent;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.nav-flex {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: var(--viii);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menubar {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 30%;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  color: white;
+}
+
+.menubar2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: fit-content;
+  max-width: 30%;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+}
+
+.contact-btn {
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-color: var(--main-col-3);
+  color: white;
+  padding: var(--ii);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.services-h {
+  font-size: var(--v);
+  padding-top: var(--iii);
+}
+
+.services-p {
+  font-size: var(--iii);
+  word-spacing: var(--i);
+}
+
+a:hover {
+  /* border-bottom: 2px solid; */
+  color: var(--main-col-3);
+}
+
+.sect-pad {
+  padding: 100px 0;
+}
+
+.landing-page {
+  background: var(--main-col-4);
+  width: 100%;
+  height: 100vh;
+}
+
+footer{
+  background-color: white;
+  color: black;
+}
+
+.hero-text {
+  max-width: 40%;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  font-size: var(--xii);
+  text-transform: capitalize;
+}
+
+.cards {
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0 4px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.img-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  object-fit: cover;
+  z-index: -3;
+}
+
+.text-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+.black {
+  background-color: black;
+}
+
+/* Default state: hide hamburger menu */
+#hamburger-menu {
+  visibility: hidden;
+  display: none;
+}
+
+/* Show hamburger menu on screens 600px and below */
+@media screen and (max-width: 600px) {
+  #hamburger-menu {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menubar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 90;
+    width: 100%;
+
+    margin: 0 auto;
+    border-radius: unset;
+    background-color: white;
+    color: black;
+    left: 0;
+    right: 0;
+    top: 100px;
+    max-width: 100%;
+    transition: 0.5s;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .container,
+  .nav-flex {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .menubar li {
+    padding: 15px 0;
+    transition: 0.5s;
+  }
+
+  .collapse-nav {
+    display: none;
+    transition: 0.5s;
+  }
+
+  .cards {
+    width: 100%;
+    margin: 10px auto;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .img-container {
+    width: 400px;
+  }
+
+  .service-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+
+    margin: 0 auto;
+  }
+}
