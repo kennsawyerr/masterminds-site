@@ -7,7 +7,7 @@ const Values = () => {
         <h5 className="white">The Masterminds Ecosystem</h5>
         <h2>Think Beyond Lorem Ipsum</h2>
 
-        <ul className="flex grid">
+        <ul className="flex grid ">
           <li>Hardwork</li>
           <li>Quality</li>
           <li>Integrity</li>
@@ -15,7 +15,7 @@ const Values = () => {
         </ul>
 
 
-<div className="text-box-container flex">
+<div className="text-box-container flex3">
         <div className="our-values-img-container">
           <img src={Vector} alt="" />
         </div>

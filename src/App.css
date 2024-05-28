@@ -101,14 +101,14 @@ body {
 
 .grid {
 }
-.our-values h2{
-   font-size: 40px;
-   font-weight: 300;
+.our-values h2 {
+  font-size: 40px;
+  font-weight: 300;
 }
 
 .grid li {
   border-bottom: 3px solid white;
-  padding: 40px 100px  20px;
+  padding: 40px 100px 20px;
   font-size: 26px;
 }
 .menubar {
@@ -270,14 +270,14 @@ img {
   background-color: black;
 }
 
-.our-values-img-container{
+.our-values-img-container {
   width: 100%;
   max-width: 500px;
   height: 100%;
   padding: 50px 0;
 }
 
-.our-values-text{
+.our-values-text {
   text-align: left;
   padding: 0 15px;
   margin: 0 10px;
@@ -315,8 +315,7 @@ img {
     transition: 0.5s;
   }
 
-
-  .grid li{
+  .grid li {
     padding: 20px;
   }
 
@@ -371,15 +370,18 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  
-  .grid{
+  .grid {
     display: grid;
     grid-template-columns: 1fr;
-
+    list-style-type: square;
   }
-  .grid li{
+  .grid li {
     border-bottom: none;
+    display: flex;
+    align-items: center;
   }
+
+
   .menubar {
     display: flex;
     flex-direction: column;
@@ -403,7 +405,7 @@ img {
 
   .container,
   .nav-flex {
-    max-width: 400px;
+    max-width: 337px;
     width: 100%;
     margin: 0 auto;
   }
@@ -437,15 +439,22 @@ img {
     width: 400px;
   }
 
-
-
-
   .service-flex {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 400px;
 
+    margin: 0 auto;
+  }
+
+  .flex3{
+    display: block;
+    width: 100%;
+  }
+
+  .hero-text{
+    max-width: 100%;
     margin: 0 auto;
   }
 }
