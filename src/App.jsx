@@ -7,6 +7,7 @@ import Landingpage from "./components/Landingpage";
 import Servicespage from "./components/Servicespage";
 import NotFound from "./components/NotFound";
 import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -19,10 +20,9 @@ function App() {
           <Route path="/about-us" element={<About/>} />
           <Route path="*" element={<NotFound/>}/>
         </Routes>
+        <Services/>
         <Footer />
       </Router>
-
-      <Footer/>
     </>
   );
 }
