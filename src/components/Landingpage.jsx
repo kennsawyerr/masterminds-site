@@ -19,6 +19,7 @@ const Landingpage = () => {
         <div className="container text-box text-box-cont">
           <h1 className="hero-text">Empowering Minds Through Technology.</h1>
         </div>
+        
       </section>
     </>
   );
