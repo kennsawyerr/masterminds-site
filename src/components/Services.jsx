@@ -2,7 +2,8 @@ import { services } from "../constants/files";
 const Services = () => {
   return (
     <>
-      <div className="container">
+      <div className="container ">
+        <div className="text-box-cont">
         <ul className="flex service-flex sect-pad">
           {services.map((item) => (
             <li className="cards" key={item.id}>
@@ -16,6 +17,7 @@ const Services = () => {
             </li>
           ))}
         </ul>
+        </div>
       </div>
     </>
   );

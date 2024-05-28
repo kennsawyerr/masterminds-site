@@ -232,6 +232,11 @@ img {
   align-items: flex-start;
   justify-content: center;
 }
+
+.text-box-cont{
+  width: 80%;
+  max-width: inherit;
+}
 .text-overlay {
   position: absolute;
   bottom: 0;

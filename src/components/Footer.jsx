@@ -4,6 +4,7 @@ const Footer = () => {
     <>
       <footer>
         <div className="container footer-flex sect-pad">
+            <div className="text-box-cont">
           <ul>
             <li>
               {" "}
@@ -24,6 +25,7 @@ const Footer = () => {
             <li>Contact</li>
             <li>Services</li>
           </ul>
+          </div>
         </div>
       </footer>
     </>
