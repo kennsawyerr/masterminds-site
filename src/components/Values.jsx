@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Vector from "./vector-image.jpg"
-
+import Vector from "./vector-image.jpg";
+import { values } from "../constants/files";
 const Values = () => {
-  const [selected, setSelected] =useState(false)
+  const [selected, setSelected] = useState(false);
 
   const handleSelect = () => {
-    setSelected(true)
-  }
+    setSelected(true);
+  };
   return (
     <>
       <section className="sect-pad container our-values">
@@ -25,12 +25,17 @@ const Values = () => {
             <img src={Vector} alt="" />
           </div>
           <div
-            className={`our-values-text ${selected ? "display-value" : "hide-value "}`}
+            className={`our-values-text ${
+              selected ? "display-value" : "hide-value "
+            }`}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            ea libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Corrupti ad magni facilis quidem ducimus libero tenetur, offi cia
-            omnis sapiente? Voluptatibus.
+            <div>
+              {values.map((item) =>(
+                <div key={item.id}>
+                  <p>{item.p}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

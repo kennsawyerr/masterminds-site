@@ -30,3 +30,32 @@ export const services = [
     src: "/computers.webp",
   },
 ];
+
+
+
+
+export const values = [
+
+  {
+    p: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,ea libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit.Corrupti ad magni facilis quidem ducimus libero tenetur, offi ciaomnis sapiente? Voluptatibus.",
+    id: 1,
+
+  },
+
+   {
+    p: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,ea libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit.Corrupti ad magni facilis quidem ducimus libero tenetur, offi ciaomnis sapiente? Voluptatibus.",
+    id : 2,
+
+  },
+   {
+    p: " 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,ea libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit.Corrupti ad magni facilis quidem ducimus libero tenetur, offi ciaomnis sapiente? Voluptatibus.",
+    id : 3,
+
+  },
+   {
+    p: "4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,ea libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit.Corrupti ad magni facilis quidem ducimus libero tenetur, offi ciaomnis sapiente? Voluptatibus.",
+
+    id: 4,
+  },
+
+]
