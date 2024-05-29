@@ -237,6 +237,14 @@ img {
   z-index: -3;
 }
 
+.display-value {
+  display: block;
+}
+
+.hide-value {
+  display: none;
+}
+
 .text-box {
   width: 100%;
   height: 100%;
@@ -275,6 +283,12 @@ img {
   max-width: 500px;
   height: 100%;
   padding: 50px 0;
+}
+
+.flex3{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .our-values-text {
@@ -381,7 +395,6 @@ img {
     align-items: center;
   }
 
-
   .menubar {
     display: flex;
     flex-direction: column;
@@ -448,12 +461,12 @@ img {
     margin: 0 auto;
   }
 
-  .flex3{
+  .flex3 {
     display: block;
     width: 100%;
   }
 
-  .hero-text{
+  .hero-text {
     max-width: 100%;
     margin: 0 auto;
   }
