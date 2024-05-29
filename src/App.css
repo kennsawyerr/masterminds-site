@@ -239,10 +239,12 @@ img {
 
 .display-value {
   display: block;
+  visibility: visible;
 }
 
 .hide-value {
-  display: none;
+
+  visibility: hidden;
 }
 
 .text-box {
