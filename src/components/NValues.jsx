@@ -7,7 +7,7 @@ const NValues = () => {
     <>
       <div>
         <section className="cards">
-          <ul className="flex ">
+          <ul className="flex comp-values ">
             <li
               onClick={() => {
                 setIsActive(true);
@@ -16,27 +16,14 @@ const NValues = () => {
             >
               NAVIGATION
             </li>
+           
             <li
               onClick={() => {
                 setIsActive(true);
               }}
               className={isActive ? "bg-color-orange " : "bg-inherit"}
             >
-              <li
-                onClick={() => {
-                  setIsActive(true);
-                }}
-                className={isActive ? "bg-color-orange " : "bg-inherit"}
-              ></li>
-              NAVIGATION
-            </li>
-            <li
-              onClick={() => {
-                setIsActive(true);
-              }}
-              className={isActive ? "bg-color-orange " : "bg-inherit"}
-            >
-              NAVIGATION
+              TECHNOLOGY
             </li>
 
             <li
@@ -45,7 +32,16 @@ const NValues = () => {
               }}
               className={isActive ? "bg-color-orange " : "bg-inherit"}
             >
-              NAVIGATION
+              SECURITY
+            </li>
+
+            <li
+              onClick={() => {
+                setIsActive(true);
+              }}
+              className={isActive ? "bg-color-orange " : "bg-inherit"}
+            >
+              MARITIME
             </li>
           </ul>
         </section>

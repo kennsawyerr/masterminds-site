@@ -195,8 +195,7 @@ footer {
   padding: 70px 10px 20px;
 }
 
-
-.flex5{
+.flex5 {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -210,15 +209,14 @@ footer {
   text-transform: capitalize;
 }
 
-.bg-color-orange{
+.bg-color-orange {
   background-color: orange;
   color: white;
 }
-.bg-inherit{
+.bg-inherit {
   background-color: inherit;
 }
 .cards {
-
   width: 100%;
   text-align: left;
   border: 1px solid black;
@@ -252,8 +250,6 @@ footer {
   height: auto;
   display: block;
 }
-
-
 
 /* 
 
@@ -348,6 +344,19 @@ img {
   height: 100%;
 }
 
+.comp-values {
+  /* width: 100%; */
+  width: fit-content;
+  margin: 0 auto;
+
+  border: 2px solid red;
+}
+
+.comp-values li {
+  margin: 0px 5px;
+  padding: 40px 20px;
+  border: 2px solid yellow;
+}
 .flex3 {
   display: flex;
   align-items: center;
