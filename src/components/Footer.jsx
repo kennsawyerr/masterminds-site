@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="container footer-flex ">
           <div className="text-box-cont">
             {/* <p className="">
-                  Copyright &copy; 2024 Masterminds Global Concept
+                  Copyright &copy; 2025 Masterminds Global Concept
                 </p> */}
 
             <div>
