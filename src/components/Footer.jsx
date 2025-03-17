@@ -10,9 +10,10 @@ const Footer = () => {
                 </p> */}
 
             <div>
-              Masterminds
+              <h1>Masterminds</h1>
             </div>
 
+<ul className="flex5">
             <ul>
               <li>Home</li>
               <li>About</li>
@@ -28,8 +29,7 @@ const Footer = () => {
               <li>+2348034029099</li>
               <li>+2348023178009</li>
             </ul>
-
-          
+            </ul>
           </div>
         </div>
       </footer>

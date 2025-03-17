@@ -192,8 +192,15 @@ a:hover {
 footer {
   background-color: white;
   color: black;
+  padding: 70px 10px 20px;
 }
 
+
+.flex5{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 .hero-text {
   max-width: 40%;
   width: 100%;
