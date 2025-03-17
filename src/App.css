@@ -210,6 +210,13 @@ footer {
   text-transform: capitalize;
 }
 
+.bg-color-orange{
+  background-color: orange;
+  color: white;
+}
+.bg-inherit{
+  background-color: inherit;
+}
 .cards {
 
   width: 100%;
