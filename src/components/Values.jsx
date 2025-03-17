@@ -20,7 +20,7 @@ const Values = () => {
       name: "Quality",
       content:
         "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,ea libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit.Corrupti ad magni facilis quidem ducimus libero tenetur, offi ciaomnis sapiente? Voluptatibus.",
-      img: "/vessel.jpg",
+      img: "/marine-security.webp",
     },
     {
       id: "3",
