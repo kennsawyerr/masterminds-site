@@ -1,12 +1,15 @@
 import Values from "./Values";
 import Landingpage from "./Landingpage";
+import { motion } from "framer-motion";
 // import Services from "./Services";
 
 const Home = () => {
   return (
     <>
-      <Landingpage />
-      <Values />
+      <motion.div className="">
+        <Landingpage />
+        <Values />
+      </motion.div>
     </>
   );
 };

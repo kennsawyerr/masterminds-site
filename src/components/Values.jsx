@@ -27,7 +27,7 @@ const Values = () => {
       name: "Integrity",
       content:
         "3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,ea libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit.Corrupti ad magni facilis quidem ducimus libero tenetur, offi ciaomnis sapiente? Voluptatibus.",
-      img: "/vessel.jpg",
+      img: "/marine-communication.jpeg",
     },
     {
       id: "4",
