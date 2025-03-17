@@ -2,7 +2,8 @@ import Values from "./Values";
 import Landingpage from "./Landingpage";
 import { motion } from "framer-motion";
 // import Services from "./Services";
-
+//  add security cameras pictures
+// add vessel scanners
 const Home = () => {
   return (
     <>
