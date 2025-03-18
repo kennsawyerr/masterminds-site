@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react";
 const Imageslider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentIndexRef = useRef(currentIndex);
-  //  very reusable
 
   useEffect(() => {
     currentIndexRef.current = currentIndex;
