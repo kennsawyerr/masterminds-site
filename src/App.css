@@ -370,16 +370,18 @@ img {
   background-color: #ffff;
   color: black;
   align-items: center;
-  background: url("/public/the-one.jpg");
-  background-size: cover;
+ 
   justify-content: center;
   /* border: 2px solid yellow; */
-
   align-items: center;
 }
 .comp-values-hero {
   flex: 1;
   height: auto;
+   background: url("/public/the-one-edit.png");
+  background-size: cover;
+  height: max-content;
+  /* padding: 100% 0; */
 }
 .comp-values-hero .textbox {
   width: 70%;
