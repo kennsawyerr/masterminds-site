@@ -6,8 +6,8 @@ const NValues = () => {
   return (
     <>
       <div>
-        <section className="cards">
-          <ul className="flex comp-values ">
+        <section className="">
+          <ul className=" comp-values ">
             <li
               onClick={() => {
                 setIsActive(true);
@@ -16,7 +16,7 @@ const NValues = () => {
             >
               NAVIGATION
             </li>
-           
+
             <li
               onClick={() => {
                 setIsActive(true);
