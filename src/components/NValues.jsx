@@ -1,71 +1,67 @@
 import { useState } from "react";
 
 const NValues = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const items = [
+    {
+      title: "A place for networking",
+      text: "Consectetur adipisicing elit. Perferendis quo enim vitae earum eum velit fugiat iusto quasi quam dolorum quae perspiciatis illum, praesentium ullam.",
+      src: "marine-security.webp",
+    },
+    {
+      title: "Innovative Solutions",
+      text: "Providing cutting-edge technology to enhance efficiency and security. Our solutions are designed to meet the highest industry standards.",
+      src: "marine-communication.jpeg",
+    },
+    {
+      title: "Reliable Communication",
+      text: "Stay connected with our advanced communication systems, ensuring seamless operations even in the most challenging environments.",
+      src: "computers.webp",
+    },
+    {
+      title: "Safety & Protection",
+      text: "Ensuring the highest level of security with state-of-the-art surveillance and monitoring systems tailored for your needs.",
+      src: "marine-navigation.jpeg",
+    },
+  ];
+
+  // Labels for the navigation
+  const labels = ["NAVIGATION", "TECHNOLOGY", "SECURITY", "MARITIME"];
 
   return (
-    <>
-      <div>
-        <section className="">
-          <ul className=" comp-values ">
+    <div>
+      <section>
+      
+        <ul className="comp-values">
+          {labels.map((label, index) => (
             <li
-              onClick={() => {
-                setIsActive(true);
-              }}
-              className={isActive ? "bg-color-orange " : "bg-inherit"}
+              key={index}
+              onClick={() => setActiveIndex(index)} 
+              className={
+                activeIndex === index ? "bg-color-orange" : "bg-color-grey"
+              }
             >
-              NAVIGATION
+              {label}
             </li>
+          ))}
+        </ul>
 
-            <li
-              onClick={() => {
-                setIsActive(true);
-              }}
-              className={isActive ? "bg-color-orange " : "bg-inherit"}
-            >
-              TECHNOLOGY
-            </li>
-
-            <li
-              onClick={() => {
-                setIsActive(true);
-              }}
-              className={isActive ? "bg-color-orange " : "bg-inherit"}
-            >
-              SECURITY
-            </li>
-
-            <li
-              onClick={() => {
-                setIsActive(true);
-              }}
-              className={isActive ? "bg-color-orange " : "bg-inherit"}
-            >
-              MARITIME
-            </li>
-          </ul>
-
-          <section className="comp-values-sub-h">
-            <article className="comp-values-hero">
-              <div className="textbox">
-                
-                <h3>Connecting the dots</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis quo enim vitae earum eum velit fugiat iusto quasi
-                  quam dolorum quae perspiciatis illum, praesentium ullam
-                  debitis, facilis nam itaque labore.
-                </p>
-              </div>
-            </article>
-
-            <div className="comp-values-img">
-              <img src="marine-security.webp" alt="" />
+        {/* Content Section */}
+        <section className="comp-values-sub-h">
+          <article className="comp-values-hero">
+            <div className="textbox">
+              <h3>{items[activeIndex].title}</h3>
+              <p>{items[activeIndex].text}</p>
             </div>
-          </section>
+          </article>
+
+          <div className="comp-values-img">
+            <img src={items[activeIndex].src} alt={items[activeIndex].title} />
+          </div>
         </section>
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 

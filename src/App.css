@@ -358,11 +358,14 @@ img {
 .comp-values li {
   width: 100%;
   padding: 30px 40px;
-  color: black;
-  background-color: #eef0f2;
-  border: 1px solid #d3d4d6;
+   border: 1px solid #d3d4d6;
   text-align: center;
+  cursor: pointer;
   /* border: 1px solid yellow; */
+}
+.bg-color-grey{
+ background-color: #eef0f2;
+ color: black;
 }
 .comp-values-sub-h {
   display: flex;
