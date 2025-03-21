@@ -364,6 +364,39 @@ img {
   text-align: center;
   /* border: 1px solid yellow; */
 }
+.comp-values-sub-h{
+  display: flex;
+  width: 100%;
+  background-color: #E4EAEF;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+  
+  align-items: center;
+}
+.comp-values-hero{
+  flex: 1;
+  
+  /* border: 2px solid green; */
+}
+.comp-values-hero .textbox{
+  width: 70%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.comp-values-hero .textbox h3{
+  font-size: 43px;
+}
+
+.comp-values-img{
+  flex: 1;
+  /* border: 2px solid blue; */
+}
+.comp-values-img img{
+  width: 100%;
+  height: auto;
+}
 .flex3 {
   display: flex;
   align-items: center;
