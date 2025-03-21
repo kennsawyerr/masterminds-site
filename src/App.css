@@ -359,41 +359,42 @@ img {
   width: 100%;
   padding: 20px 40px;
   color: black;
-  background-color: #EEF0F2;
+  background-color: #eef0f2;
   border: 1px solid #d3d4d6;
   text-align: center;
   /* border: 1px solid yellow; */
 }
-.comp-values-sub-h{
+.comp-values-sub-h {
   display: flex;
   width: 100%;
-  background-color: #E4EAEF;
+  background-color: #ffff;
   color: black;
   align-items: center;
+  background: url("/public/the-one.jpg");
+  background-size: cover;
   justify-content: center;
   /* border: 2px solid yellow; */
-  
+
   align-items: center;
 }
-.comp-values-hero{
+.comp-values-hero {
   flex: 1;
-  
-  /* border: 2px solid green; */
+  height: auto;
 }
-.comp-values-hero .textbox{
+.comp-values-hero .textbox {
   width: 70%;
   margin: 0 auto;
   /* text-align: center; */
 }
-.comp-values-hero .textbox h3{
+.comp-values-hero .textbox h3 {
   font-size: 43px;
 }
 
-.comp-values-img{
+.comp-values-img {
   flex: 1;
   /* border: 2px solid blue; */
 }
-.comp-values-img img{
+.comp-values-img img {
   width: 100%;
   height: auto;
 }

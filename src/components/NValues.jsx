@@ -48,6 +48,7 @@ const NValues = () => {
           <section className="comp-values-sub-h">
             <article className="comp-values-hero">
               <div className="textbox">
+                
                 <h3>Connecting the dots</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
