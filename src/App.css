@@ -609,7 +609,7 @@ img {
   }
 }
 
-/* experimental code over here */
+
 
 .tab-btn {
   cursor: pointer;
@@ -633,15 +633,15 @@ img {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  
   padding: 20px;
 }
 
 .grid-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   text-decoration: none;
 }
 
