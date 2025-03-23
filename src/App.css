@@ -600,6 +600,19 @@ a {
     margin: 40px auto;
     font-size: calc(16px + 4 * ((100vw - 320px) / 880));
   }
+
+  .footer-about {
+  font-size: 13px;
+  width: 100%;
+  padding: 0;
+}
+.footer-cont{
+  width: 100%;
+}
+.footer-cont h4{
+  font-weight: normal;
+  padding: 10px 0;
+}
 }
 
 .tab-btn {

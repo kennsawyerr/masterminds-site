@@ -11,7 +11,7 @@ const Footer = () => {
                 </p> */}
 
               <div>
-                <h1 className="logo">Masterminds</h1>
+                <h1 className="logo br">Masterminds</h1>
               </div>
 
               <ul className="flex5">
