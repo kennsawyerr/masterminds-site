@@ -194,7 +194,7 @@ a:hover {
 footer {
   background-color: white;
   color: black;
-  padding: 70px 10px 20px;
+  
 }
 
 .flex5 {
@@ -256,6 +256,8 @@ img {
 .footer-flex {
   display: flex;
   justify-content: space-around;
+  padding: 70px 10px 20px;
+  color: white;
   background-color: #0F172B;
 }
 .img-container {
@@ -398,27 +400,9 @@ img {
   display: none;
 }
 
-/* Show hamburger menu on screens 600px and below */
-@media screen and (max-width: 600px) {
-  #hamburger-menu {
-    visibility: visible;
-    display: block;
-  }
-  /* #0F172B */
 
-  .footer-flex {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  /* justify-content: space-around; */
-}
-
-.flex5{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  border: 2px solid red;
-}
+a{
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
@@ -489,7 +473,6 @@ img {
     flex-direction: column;
     width: 100%;
     max-width: 400px;
-
     margin: 0 auto;
   }
 }
@@ -524,7 +507,8 @@ img {
   }
 
   .logo {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 40px 0;
   }
 
   .container,
@@ -588,6 +572,34 @@ img {
     max-width: 100%;
     margin: 0 auto;
   }
+ 
+  #hamburger-menu {
+    visibility: visible;
+    display: block;
+  }
+  /* #0F172B */
+
+  footer{
+    text-align: center;
+    line-height: 2;
+  }
+
+  .footer-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 0;
+  /* justify-content: space-around; */
+}
+
+.flex5{
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+}
+
+
 }
 
 .tab-btn {
@@ -617,11 +629,12 @@ img {
   height: 100%;
   color: white;
   padding: 8px;
-  font-size: 40px;
+ font-size: calc(24px + 4*((100vw - 320px) / 880));
 }
 
 .hvy-blue-overlay{
   background: linear-gradient(rgba(0, 49, 205, 0.3));
+   font-size: calc(24px + 4*((100vw - 320px) / 880));
 }
 .black-overlay {
   background-color: rgba(0, 0, 0, 0.3);
@@ -632,7 +645,7 @@ img {
   height: 100%;
   color: white;
   padding: 8px;
-  font-size: 40px;
+   font-size: calc(24px + 4*((100vw - 320px) / 880));
 }
 .grid-container {
   display: grid;
@@ -660,7 +673,7 @@ img {
 
 .overlay {
   position: absolute;
-  font-size: 40px;
+   font-size: calc(24px + 4*((100vw - 320px) / 880));
   top: 0px;
   width: 100%;
   left: 0px;

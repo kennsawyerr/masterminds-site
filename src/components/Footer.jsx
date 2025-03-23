@@ -2,44 +2,55 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container footer-flex ">
-          <div className="text-box-cont">
-            {/* <p className="">
+        <div className=" footer-flex ">
+          <div className="container">
+            {" "}
+            <div className="text-box-cont">
+              {/* <p className="">
                   Copyright &copy; 2025 Masterminds Global Concept
                 </p> */}
 
-            <div>
-              <h1>Masterminds</h1>
-            </div>
+              <div>
+                <h1 className="logo">Masterminds</h1>
+              </div>
 
-            <ul className="flex5">
-              <ul>
-                <li>Home</li>
-                <li>About</li>
-              </ul>
               <ul className="flex5">
-                <li>FAQs</li>
-                <li>Our Services</li>
-              </ul>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                </ul>
+                <ul className="flex5">
+                  <li>
+                    <a href="#">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Services</a>
+                  </li>
+                </ul>
 
-              <ul>
-                <li>Contact us:</li>
-                <li>service@mastermindsng.com</li>
+                <ul>
+                  <li><a href="#">Contact</a></li>
+                  {/* <li>service@mastermindsng.com</li>
                 <li>+2348034029099</li>
-                <li>+2348023178009</li>
+                <li>+2348023178009</li> */}
+                </ul>
               </ul>
-            </ul>
-          </div>
+            </div>
+          </div>{" "}
         </div>
 
-        <ul className="container">
-          <li>c 2025 Masterminds</li>
+        <ul className="container small-txt">
+          <li>c 2025 Masterminds Global Concepts Limited</li>
           <li>Privacy Policy</li>
           <li>Cookie Policy</li>
           <li>Terms of Use</li>
         </ul>
       </footer>
-      crescendo crescendo cressendo Y Y cresndo Y
+     
     </>
   );
 };
