@@ -3,7 +3,7 @@
 // // 3. Power & Control Systems Automation  
 // // 4. Security & Surveillance Solutions  
 // // 5. Marine Sensor Calibration & Troubleshooting  
-// // 6. Software & Data Management for Marine Systems
+// // 6.  Emergency and Alarm Systems Integration 
 
 
 
@@ -13,36 +13,41 @@ const services = [
     link: "#",
     src: "closeups.jpg",
     className: "grid-no-one",
+    csStyles: "black-overlay",
   },
   {
     title: "Communication Systems 2",
     link: "#",
-    src: "marine-navigation.jpeg",
+    src:"ship-antenna.avif",
     className: "grid-no-two",
   },
   {
     title: "Power & Control 3",
     link: "#",
-    src: "marine-security.webp",
+    src: "controls.png",
     className: "grid-no-three",
+    csStyles: "black-overlay",
   },
   {
     title: "Security & Surveillance 4",
     link: "#",
-    src: "fernandina-vessel.jpg",
-    className: "grid-no-four",
+    src: "security.avif",
+    className: "grid-no-four ",
+    csStyles: "blue-overlay",
   },
   {
     title: "Marine Sensor Calibration 5",
     link: "#",
-    src: "marine-communication.jpeg",
+    src: "marine-radar.jpg",
     className: "grid-no-five",
+    csStyles: "overlay",
   },
   {
-    title: "Software & Data Management 6",
+    title: " Emergency and Alarm Systems Integration  6",
     link: "#",
-    src: "vessel.jpg",
+    src: "emergency.avif",
     className: "grid-no-six",
+    // csStyles: "black-overlay",
   },
 ];
 
@@ -56,7 +61,7 @@ const NServices = () => {
           className={`grid-item ${service.className}`}
         >
           <img src={service.src} alt={service.title} />
-          <div className="overlay">
+          <div className={service.csStyles || "overlay"}>
             <div className="service-txt-box">{service.title}</div>
           </div>
         </a>
