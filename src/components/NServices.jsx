@@ -1,11 +1,9 @@
-// // 1. Navigation System Installation & Maintenance  
-// // 2. Communication Systems Integration  
-// // 3. Power & Control Systems Automation  
-// // 4. Security & Surveillance Solutions  
-// // 5. Marine Sensor Calibration & Troubleshooting  
-// // 6.  Emergency and Alarm Systems Integration 
-
-
+// // 1. Navigation System Installation & Maintenance
+// // 2. Communication Systems Integration
+// // 3. Power & Control Systems Automation
+// // 4. Security & Surveillance Solutions
+// // 5. Marine Sensor Calibration & Troubleshooting
+// // 6.  Emergency and Alarm Systems Integration
 
 const services = [
   {
@@ -18,8 +16,9 @@ const services = [
   {
     title: "Communication Systems ",
     link: "#",
-    src:"ship-antenna.avif",
+    src: "ship-antenna.avif",
     className: "grid-no-two",
+    csStyles: "black-overlay",
   },
   {
     title: "Power & Control ",
@@ -53,20 +52,23 @@ const services = [
 
 const NServices = () => {
   return (
-    <div className="grid-container">
-      {services.map((service, index) => (
-        <a
-          key={index}
-          href={service.link}
-          className={`grid-item ${service.className}`}
-        >
-          <img src={service.src} alt={service.title} />
-          <div className={service.csStyles || "overlay"}>
-            <div className="service-txt-box">{service.title}</div>
-          </div>
-        </a>
-      ))}
-    </div>
+    <>
+    <h2>Our Services</h2>
+      <div className="grid-container">
+        {services.map((service, index) => (
+          <a
+            key={index}
+            href={service.link}
+            className={`grid-item ${service.className}`}
+          >
+            <img src={service.src} alt={service.title} />
+            <div className={service.csStyles || "overlay"}>
+              <div className="service-txt-box">{service.title}</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </>
   );
 };
 
