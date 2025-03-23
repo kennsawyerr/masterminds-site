@@ -22,40 +22,40 @@
 
 const services = [
   {
-    title: "Navigation Systems",
+    title: "Navigation Systems 1",
     link: "#",
     src: "computers.webp",
-    className: "big",
+    className: "grid-no-one",
   },
   {
-    title: "Communication Systems",
+    title: "Communication Systems 2",
     link: "#",
-    src: "computers.webp",
-    className: "small",
+    src: "marine-navigation.jpeg",
+    className: "grid-no-two",
   },
   {
-    title: "Power & Control",
+    title: "Power & Control 3",
     link: "#",
-    src: "computers.webp",
-    className: "medium",
+    src: "marine-security.webp",
+    className: "grid-no-three",
   },
   {
     title: "Security & Surveillance",
     link: "#",
-    src: "computers.webp",
-    className: "wide",
+    src: "fernandina-vessel.jpg",
+    className: "grid-no-four",
   },
   {
     title: "Marine Sensor Calibration",
     link: "#",
-    src: "computers.webp",
-    className: "tall",
+    src: "marine-communication.jpeg",
+    className: "grid-no-five",
   },
   {
     title: "Software & Data Management",
     link: "#",
-    src: "computers.webp",
-    className: "medium",
+    src: "vessel.jpg",
+    className: "grid-no-six",
   },
 ];
 

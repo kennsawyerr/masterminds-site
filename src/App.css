@@ -230,41 +230,6 @@ footer {
   color: white;
 }
 
-.grid-item {
-  /* background-color: #f0f0f0; */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 500px;
-  padding: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.grid-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 
-
-.img-container {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  position: absolute;
-  object-fit: cover;
-  z-index: -3;
-}
-
-*/
 .service-grid {
   display: grid;
   /* grid-template-columns: repeat(3 , auto); */
@@ -358,14 +323,14 @@ img {
 .comp-values li {
   width: 100%;
   padding: 30px 40px;
-   border: 1px solid #d3d4d6;
+  border: 1px solid #d3d4d6;
   text-align: center;
   cursor: pointer;
   /* border: 1px solid yellow; */
 }
-.bg-color-grey{
- background-color: #eef0f2;
- color: black;
+.bg-color-grey {
+  background-color: #eef0f2;
+  color: black;
 }
 .comp-values-sub-h {
   display: flex;
@@ -609,8 +574,6 @@ img {
   }
 }
 
-
-
 .tab-btn {
   cursor: pointer;
 }
@@ -627,21 +590,18 @@ img {
   display: block;
 }
 
-
-
 /* Services page */
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  
   padding: 20px;
 }
 
 .grid-item {
   position: relative;
   overflow: hidden;
-  /* border-radius: 8px; */
+  border: 1px solid;
   text-decoration: none;
 }
 
@@ -659,7 +619,6 @@ img {
   background: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 8px;
-  border-radius: 5px;
   font-size: 16px;
 }
 
@@ -687,4 +646,35 @@ img {
 .tall {
   grid-column: span 1;
   grid-row: span 3;
+}
+
+
+.grid-no-one {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-no-two {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.grid-no-three {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.grid-no-four {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.grid-no-five {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid-no-six {
+  grid-column: span 2;
+  grid-row: span 2;
 }
