@@ -47,7 +47,7 @@ const services = [
     link: "#",
     src: "emergency.avif",
     className: "grid-no-six",
-    // csStyles: "black-overlay",
+    csStyles: "black-overlay",
   },
 ];
 
