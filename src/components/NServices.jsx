@@ -9,41 +9,41 @@
 
 const services = [
   {
-    title: "Navigation Systems 1",
+    title: "Navigation Systems ",
     link: "#",
     src: "closeups.jpg",
     className: "grid-no-one",
     csStyles: "black-overlay",
   },
   {
-    title: "Communication Systems 2",
+    title: "Communication Systems ",
     link: "#",
     src:"ship-antenna.avif",
     className: "grid-no-two",
   },
   {
-    title: "Power & Control 3",
+    title: "Power & Control ",
     link: "#",
     src: "controls.png",
     className: "grid-no-three",
     csStyles: "black-overlay",
   },
   {
-    title: "Security & Surveillance 4",
+    title: "Security & Surveillance ",
     link: "#",
     src: "security.avif",
     className: "grid-no-four ",
     csStyles: "blue-overlay",
   },
   {
-    title: "Marine Sensor Calibration 5",
+    title: "Marine Sensor Calibration ",
     link: "#",
     src: "marine-radar.jpg",
     className: "grid-no-five",
     csStyles: "overlay",
   },
   {
-    title: " Emergency and Alarm Systems Integration  6",
+    title: " Emergency and Alarm Systems Integration  ",
     link: "#",
     src: "emergency.avif",
     className: "grid-no-six",
