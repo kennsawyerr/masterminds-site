@@ -194,7 +194,6 @@ a:hover {
 footer {
   background-color: white;
   color: black;
-  
 }
 
 .flex5 {
@@ -249,8 +248,8 @@ img {
   width: 100%;
   height: 100%;
 }
-.bg-footer{
-  background-color: #0F172B;
+.bg-footer {
+  background-color: #0f172b;
 }
 
 .footer-flex {
@@ -258,7 +257,7 @@ img {
   justify-content: space-around;
   padding: 70px 10px 20px;
   color: white;
-  background-color: #0F172B;
+  background-color: #0f172b;
 }
 .img-container {
   width: 300px;
@@ -400,8 +399,7 @@ img {
   display: none;
 }
 
-
-a{
+a {
   text-decoration: underline;
 }
 
@@ -482,6 +480,10 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     list-style-type: square;
+  }
+  footer .container{
+    width: 100%;
+    /* padding: 0; */
   }
   .grid li {
     border-bottom: none;
@@ -572,34 +574,32 @@ a{
     max-width: 100%;
     margin: 0 auto;
   }
- 
+
   #hamburger-menu {
     visibility: visible;
     display: block;
   }
   /* #0F172B */
 
-  footer{
+  footer {
     text-align: center;
     line-height: 2;
   }
 
   .footer-flex {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 20px 0;
-  /* justify-content: space-around; */
-}
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px 0;
+    /* justify-content: space-around; */
+  }
 
-.flex5{
-  display: flex;
-  flex-direction: column;
-  margin: 40px auto;
-  font-size: calc(16px + 4 * ((100vw - 320px) / 880));
-}
-
-
+  .flex5 {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+  }
 }
 
 .tab-btn {
@@ -629,12 +629,12 @@ a{
   height: 100%;
   color: white;
   padding: 8px;
- font-size: calc(24px + 4*((100vw - 320px) / 880));
+  font-size: calc(24px + 4 * ((100vw - 320px) / 880));
 }
 
-.hvy-blue-overlay{
+.hvy-blue-overlay {
   background: linear-gradient(rgba(0, 49, 205, 0.3));
-   font-size: calc(24px + 4*((100vw - 320px) / 880));
+  font-size: calc(24px + 4 * ((100vw - 320px) / 880));
 }
 .black-overlay {
   background-color: rgba(0, 0, 0, 0.3);
@@ -645,7 +645,7 @@ a{
   height: 100%;
   color: white;
   padding: 8px;
-   font-size: calc(24px + 4*((100vw - 320px) / 880));
+  font-size: calc(24px + 4 * ((100vw - 320px) / 880));
 }
 .grid-container {
   display: grid;
@@ -673,7 +673,7 @@ a{
 
 .overlay {
   position: absolute;
-   font-size: calc(24px + 4*((100vw - 320px) / 880));
+  font-size: calc(24px + 4 * ((100vw - 320px) / 880));
   top: 0px;
   width: 100%;
   left: 0px;
@@ -715,4 +715,21 @@ a{
 .grid-no-six {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.br {
+  border: 2px solid red;
+}
+
+.footer-about {
+  font-size: 13px;
+  width: 100%;
+  padding: 0;
+}
+.footer-cont{
+  width: 100%;
+}
+.footer-cont h4{
+  font-weight: normal;
+  padding: 10px 0;
 }

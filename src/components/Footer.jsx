@@ -3,7 +3,7 @@ const Footer = () => {
     <>
       <footer>
         <div className=" footer-flex ">
-          <div className="container">
+          <div className="">
             {" "}
             <div className="text-box-cont">
               {/* <p className="">
@@ -32,8 +32,19 @@ const Footer = () => {
                   </li>
                 </ul>
 
-                <ul>
-                  <li><a href="#">Contact</a></li>
+                <ul className="footer-cont">
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+
+                  <li className="footer-about">
+                    <h4>About Masterminds</h4> Masterminds is a global leader in
+                    innovative technologies and lifecycle solutions for the
+                    marine and energy markets. We emphasise innovation in
+                    sustainable technology and services to help our customers
+                    continuously improve their environmental and economic
+                    performance.
+                  </li>
                   {/* <li>service@mastermindsng.com</li>
                 <li>+2348034029099</li>
                 <li>+2348023178009</li> */}
@@ -50,7 +61,6 @@ const Footer = () => {
           <li>Terms of Use</li>
         </ul>
       </footer>
-     
     </>
   );
 };
