@@ -4,19 +4,6 @@
 // // 4. Security & Surveillance Solutions  
 // // 5. Marine Sensor Calibration & Troubleshooting  
 // // 6. Software & Data Management for Marine Systems
-// const NServices = () => {
-//   return <div>NServices</div>;
-// };
-
-// export default NServices;
-
-
-// I want to create a grid for all this six tools to be.They should all make up a box in react . They can take uneven sizes . some can be big, some can be small.Some can be square , some could be Rectangle
-
-// They should all be a link with a picture on them 
-
-// u can use this img src ="computers.webp" for all because i would change them later 
-
 
 
 
@@ -24,7 +11,7 @@ const services = [
   {
     title: "Navigation Systems 1",
     link: "#",
-    src: "computers.webp",
+    src: "closeups.jpg",
     className: "grid-no-one",
   },
   {
@@ -40,19 +27,19 @@ const services = [
     className: "grid-no-three",
   },
   {
-    title: "Security & Surveillance",
+    title: "Security & Surveillance 4",
     link: "#",
     src: "fernandina-vessel.jpg",
     className: "grid-no-four",
   },
   {
-    title: "Marine Sensor Calibration",
+    title: "Marine Sensor Calibration 5",
     link: "#",
     src: "marine-communication.jpeg",
     className: "grid-no-five",
   },
   {
-    title: "Software & Data Management",
+    title: "Software & Data Management 6",
     link: "#",
     src: "vessel.jpg",
     className: "grid-no-six",
@@ -69,7 +56,9 @@ const NServices = () => {
           className={`grid-item ${service.className}`}
         >
           <img src={service.src} alt={service.title} />
-          <div className="overlay">{service.title}</div>
+          <div className="overlay">
+            <div className="service-txt-box">{service.title}</div>
+          </div>
         </a>
       ))}
     </div>

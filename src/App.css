@@ -601,7 +601,7 @@ img {
 .grid-item {
   position: relative;
   overflow: hidden;
-  border: 1px solid;
+  /* border: 1px solid; */
   text-decoration: none;
 }
 
@@ -614,38 +614,18 @@ img {
 
 .overlay {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: rgba(0, 0, 0, 0.6);
+ font-size: 40px;
+   top: 0px;
+  width: 100%;
+  left: 0px;
+  /* background: rgba(0, 0, 0, 0.6); */
+  background: linear-gradient(rgba(0,0,0,0.6),transparent);
   color: white;
   padding: 8px;
-  font-size: 16px;
 }
-
-/* Different sizes */
-.big {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.small {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-
-.medium {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-
-.wide {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-
-.tall {
-  grid-column: span 1;
-  grid-row: span 3;
+.service-txt-box{
+  padding: 30px;
+  /* border: 2px solid red; */
 }
 
 
