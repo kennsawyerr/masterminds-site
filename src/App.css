@@ -249,10 +249,14 @@ img {
   width: 100%;
   height: 100%;
 }
+.bg-footer{
+  background-color: #0F172B;
+}
 
 .footer-flex {
   display: flex;
   justify-content: space-around;
+  background-color: #0F172B;
 }
 .img-container {
   width: 300px;
@@ -326,7 +330,6 @@ img {
   border: 1px solid #d3d4d6;
   text-align: center;
   cursor: pointer;
-  /* border: 1px solid yellow; */
 }
 .bg-color-grey {
   background-color: #eef0f2;
@@ -341,8 +344,6 @@ img {
   background: url("/public/the-one.jpg");
   background-size: cover;
   justify-content: center;
-  /* border: 2px solid yellow; */
-
   align-items: center;
 }
 .comp-values-hero {
@@ -408,7 +409,8 @@ img {
   .footer-flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  margin: 0 auto;
+  /* justify-content: space-around; */
 }
 
 .flex5{

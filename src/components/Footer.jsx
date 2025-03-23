@@ -17,7 +17,7 @@ const Footer = () => {
                 <li>Home</li>
                 <li>About</li>
               </ul>
-              <ul>
+              <ul className="flex5">
                 <li>FAQs</li>
                 <li>Our Services</li>
               </ul>
@@ -32,13 +32,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <ul>
+        <ul className="container">
           <li>c 2025 Masterminds</li>
           <li>Privacy Policy</li>
           <li>Cookie Policy</li>
           <li>Terms of Use</li>
         </ul>
       </footer>
+      crescendo crescendo cressendo Y Y cresndo Y
     </>
   );
 };
