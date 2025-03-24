@@ -12,7 +12,7 @@ const NValues = () => {
     {
       title: "Innovative Solutions",
       text: "Providing cutting-edge technology to enhance efficiency and security. Our solutions are designed to meet the highest industry standards.",
-      src: "marine-communication.jpeg",
+      src: "radar-2.jpg",
     },
     {
       title: "Reliable Communication",

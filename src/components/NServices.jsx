@@ -53,7 +53,7 @@ const services = [
 const NServices = () => {
   return (
     <>
-    <h2>Our Services</h2>
+      <h2 className="container">Our Services Navigation Systems</h2>
       <div className="grid-container">
         {services.map((service, index) => (
           <a
