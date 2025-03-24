@@ -1,5 +1,4 @@
 import { Twirl as Hamburger } from "hamburger-react";
-import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -25,25 +24,27 @@ const Header = () => {
           <div className="logo">Masterminds</div>
 
           <ul className={`flex menubar  ${isOpen ? " " : "collapse-nav"}`}>
-            <li >
+            <li>
               <a href="">Home</a>{" "}
             </li>
 
-            <li href= "">
+            <li href="">
               <a href="">About</a>{" "}
             </li>
 
             <li>
-              <a href="">Services</a>{" "}
+              <a href="">Energy</a>{" "}
+            </li>
+            <li>
+              <a href="">Marine</a>{" "}
+            </li>
+            <li>
+              <a href="">Company</a>{" "}
             </li>
           </ul>
 
           <ul className="flex menubar2">
-            <li>
-              <button>
-                <FaSearch  size={25}/>
-              </button>
-            </li>
+    
 
             <li id="hamburger-menu">
               <Hamburger
@@ -54,9 +55,7 @@ const Header = () => {
               />
             </li>
 
-            <li>
-              <button className="contact-btn">Contact Us</button>
-            </li>
+          
           </ul>
         </div>
       </section>
