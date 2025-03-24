@@ -2,20 +2,15 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className=" footer-flex ">
+        <div className=" footer-bg ">
           <div className="">
-            {" "}
             <div className="text-box-cont">
-              {/* <p className="">
-                  Copyright &copy; 2025 Masterminds Global Concept
-                </p> */}
-
               <div>
-                <h1 className="logo br">Masterminds</h1>
+                <h1 className="logo ">Masterminds</h1>
               </div>
 
-              <ul className="flex5">
-                <ul>
+              <section className="">
+                <ul className="">
                   <li>
                     <a href="#">Home</a>
                   </li>
@@ -23,20 +18,26 @@ const Footer = () => {
                     <a href="#">About</a>
                   </li>
                 </ul>
+
                 <ul className="flex5">
-                  <li>
-                    <a href="#">FAQs</a>
-                  </li>
-                  <li>
-                    <a href="#">Our Services</a>
-                  </li>
+                  <ul>
+                    <li>
+                      <a href="#" className="">
+                        FAQs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="">
+                        Our Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
                 </ul>
 
-                <ul className="footer-cont">
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
-
+                <ul className="footer-cont ">
                   <li className="footer-about">
                     <h4>About Masterminds</h4> Masterminds is a global leader in
                     innovative technologies and lifecycle solutions for the
@@ -49,16 +50,24 @@ const Footer = () => {
                 <li>+2348034029099</li>
                 <li>+2348023178009</li> */}
                 </ul>
-              </ul>
+              </section>
             </div>
           </div>{" "}
         </div>
 
-        <ul className="container small-txt">
-          <li>c 2025 Masterminds Global Concepts Limited</li>
-          <li>Privacy Policy</li>
-          <li>Cookie Policy</li>
-          <li>Terms of Use</li>
+        <ul className="container small-txt ">
+          <li className="grey">
+            &copy;2025 Masterminds Global Concepts Limited
+          </li>
+          <li>
+            <a href="/privacy-policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/cookie-policy">Cookie Policy</a>
+          </li>
+          <li>
+            <a href="/terms-of-use">Terms of Use</a>
+          </li>
         </ul>
       </footer>
     </>

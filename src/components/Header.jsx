@@ -21,10 +21,10 @@ const Header = () => {
   return (
     <>
       <section className={color ? "header black" : "header"}>
-        <div className="nav-flex menubar">
+        <div className="nav-flex">
           <div className="logo">Masterminds</div>
 
-          <ul className={`flex   ${isOpen ? " " : "collapse-nav"}`}>
+          <ul className={`flex menubar  ${isOpen ? " " : "collapse-nav"}`}>
             <li >
               <a href="">Home</a>{" "}
             </li>
@@ -38,7 +38,7 @@ const Header = () => {
             </li>
           </ul>
 
-          <ul className="flex ">
+          <ul className="flex menubar2">
             <li>
               <button>
                 <FaSearch  size={25}/>
