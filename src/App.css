@@ -331,6 +331,7 @@ img {
 .comp-values-sub-h {
   display: flex;
   width: 100%;
+  height: 600px;
   background-color: #ffff;
   color: black;
   align-items: center;

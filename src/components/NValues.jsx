@@ -30,7 +30,7 @@ const NValues = () => {
   const labels = ["NAVIGATION", "TECHNOLOGY", "SECURITY", "MARITIME"];
 
   return (
-    <div>
+    <>
       <section>
       
         <ul className="comp-values">
@@ -61,7 +61,7 @@ const NValues = () => {
           </div>
         </section>
       </section>
-    </div>
+    </>
   );
 };
 
