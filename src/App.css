@@ -84,7 +84,7 @@ body {
 .nav-flex {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,15 +114,13 @@ body {
   font-size: 26px;
 }
 .menubar {
-  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
+  background: rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(10px); 
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  max-width: 30%;
   padding: 8px;
   border: 1px solid transparent;
-  border-radius: 40px;
   color: white;
 }
 
