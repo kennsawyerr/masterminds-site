@@ -21,9 +21,10 @@ const Header = () => {
     <>
       <section className={color ? "header black" : "header"}>
         <div className="nav-flex">
-          <div className="logo">Masterminds</div>
-
           <ul className={`flex menubar  ${isOpen ? " " : "collapse-nav"}`}>
+            <li>
+              <div className="logo">Masterminds</div>
+            </li>
             <li>
               <a href="">Home</a>{" "}
             </li>
@@ -44,8 +45,6 @@ const Header = () => {
           </ul>
 
           <ul className="flex menubar2">
-    
-
             <li id="hamburger-menu">
               <Hamburger
                 color="white"
@@ -54,8 +53,6 @@ const Header = () => {
                 onClick={toggleNavbar}
               />
             </li>
-
-          
           </ul>
         </div>
       </section>
