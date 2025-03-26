@@ -71,8 +71,6 @@ body {
 .our-values h5 {
   font-weight: 300;
 }
-
-/* navigation section */
 .header {
   box-sizing: border-box;
   background-color: transparent;
@@ -96,19 +94,6 @@ body {
   color: white;
   font-size: var(--v);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* nav section */
 
 .flex {
   display: flex;
@@ -144,7 +129,7 @@ body {
   width: fit-content;
   max-width: 30%;
   gap: 6px;
-  /* padding: 8px; */
+
   border: 1px solid transparent;
   border-radius: 40px;
   color: white;

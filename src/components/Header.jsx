@@ -21,16 +21,17 @@ const Header = () => {
     <>
       <section className={color ? "header black" : "header"}>
         <div className="nav-flex">
-          <ul className={`flex menubar  ${isOpen ? " " : "collapse-nav"}`}>
+        
+            <ul className={`menubar ${isOpen ? "flex" : "collapse-nav"}`}>
+
             <li>
               <div className="logo">Masterminds</div>
             </li>
             <li>
               <a href="">Home</a>{" "}
             </li>
-
-            <li href="">
-              <a href="">About</a>{" "}
+            <li>
+              <a href="">About</a>
             </li>
 
             <li>
