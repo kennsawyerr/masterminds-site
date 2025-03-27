@@ -11,3 +11,26 @@ const About = () => {
 }
 
 export default About
+
+
+// 1. handelClickOutsideNav  
+// 2. dropdown nav
+// 3. smooth animation
+// isOpen? 
+// max-height-40px, opacity-100;
+// !isOpen isnotOpen max-height 0 opacity 0
+
+
+// .nav-ele{
+//   transition: all 0.3s ease-in-out;
+// }
+
+// .isOpenStyle{
+//   max-height: 40px;
+//   opacity: 100;
+// }
+
+// .isNotOpenStyle{
+//     max-height: 0;
+//   opacity: 0;
+// }
