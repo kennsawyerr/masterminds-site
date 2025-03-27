@@ -80,15 +80,16 @@ const Header = () => {
             1. nav responsive DONE
             2. navclickOutsideNAv  DONE
             3. nav closing majestically DONE
-
             4. nav should be the same size no matter content DONE GOOD ENOUGH
             5. navlinks hover DONE
             6. nav confirmed color DONE
-
             7. services pages with dynamic content DONE
-            8. about pages
+
+            8. about page
             9. FAQ page
             10. Contact page with an email
+            12. A simple privacy policy page along with Cookie policy and terms of use just like Services
+            13. make other navbar and comment until tomorrow when you can make it responsive
 
             TOMORROW MORNING
             11. Responsive navbar
