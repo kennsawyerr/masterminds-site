@@ -89,7 +89,7 @@ const Header = () => {
 
             TOMORROW MORNING
             11. Responsive navbar
-            12. 
+            12. Issue with navClickOutsideNav
             
             
             */}
