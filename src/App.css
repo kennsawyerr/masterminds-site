@@ -8,7 +8,8 @@
 :root {
   --main-col-1: grey;
   --main-col-2: #a8d6ed;
-  --main-col-3: #0031cd;
+  /* --main-col-3: #0031cd; */
+  --main-col-3: blue;
   --main-col-4: #0e0f17;
 
   /* font sizes */
@@ -1054,24 +1055,26 @@ footer section {
   top: 50px;
   right: 10%;
   left: 10%;
+  /* max-height: 0; */
   max-width: 80%;
   background-color: white;
   color: black;
   width: fit-content;
   height: fit-content;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .tb {
   border: 2px solid green;
 }
 .isOpenStyle {
-  transform: translateY(0);
-  opacity: 1;
+  /* transform: translateY(0); */
+  max-height: 1000px;
 }
 .isNotOpenStyle {
-  opacity: 0;
-  transform: translateY(-1000px);
+  max-height: 0;
+  /* transform: translateY(-1000px); */
 }
 
 .col-flex {
@@ -1082,6 +1085,15 @@ footer section {
   width: 300px;
   padding: 10px;
   background-color: white;
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+}
+.nav-cards:nth-child(1) {
+  height: fit-content;
+  min-height: fit-content;
+  border: none;
 }
 
 .nav-about-img {
@@ -1110,4 +1122,26 @@ nav img {
   /* padding: 10px 5px; */
   /* padding: 0px 0px 5px 0px; */
   padding-left: 5px;
+}
+
+.nav-cards:nth-child(1) a {
+  display: block; /* Makes the link take up full width */
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-cards:nth-child(1) a:hover {
+  color: blue;
+  text-decoration: none;
+  /* width: 100%;  */
+}
+
+.nav-cards a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.nav-cards a {
+  text-decoration: none;
+  color: inherit;
 }

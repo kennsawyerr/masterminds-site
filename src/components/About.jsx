@@ -13,24 +13,23 @@ const About = () => {
 export default About
 
 
-// 1. handelClickOutsideNav  
-// 2. dropdown nav
-// 3. smooth animation
-// isOpen? 
-// max-height-40px, opacity-100;
-// !isOpen isnotOpen max-height 0 opacity 0
+// useRef
+// const sidebarRef= useRef(null)
+// 
+
+//  const handleClickOutside = (event) => {
+//     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+//      setIsRecOpen(false);
+//     }
+//   };
 
 
-// .nav-ele{
-//   transition: all 0.3s ease-in-out;
-// }
-
-// .isOpenStyle{
-//   max-height: 40px;
-//   opacity: 100;
-// }
-
-// .isNotOpenStyle{
-//     max-height: 0;
-//   opacity: 0;
-// }
+    // useEffect(() => {
+    //   document.addEventListener("mousedown", handleClickOutside);
+    //   document.addEventListener("touchstart", handleClickOutside);
+  
+    //   return () => {
+    //     document.removeEventListener("mousedown", handleClickOutside);
+    //     document.removeEventListener("touchstart", handleClickOutside);
+    //   };
+    // }, []);

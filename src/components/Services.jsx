@@ -64,7 +64,8 @@ const Sidebar = () => {
   const { logout, user } = useAuthStore();
   const [isPanelVisible, setPanelVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isRecOpen, setIsRecOpen] = useState(false);
+  const [isRecOpen, setIsRecOpen]
+   = useState(false);
 
   const authState = useMemo(() => ({ isAdmin, user }), [isAdmin, user]);
 

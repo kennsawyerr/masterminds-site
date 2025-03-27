@@ -1,12 +1,18 @@
 import { Twirl as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [isRecOpen, setIsRecOpen] = useState(false);
   const [color, setColor] = useState(false);
 
+  const sidebarRef = useRef(null);
   const toggleNavbar = () => {
     setOpen(!isOpen);
+  };
+  const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      setIsRecOpen(false);
+    }
   };
 
   const colorChange = () => {
@@ -16,6 +22,16 @@ const Header = () => {
       setColor(false);
     }
   };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, []);
 
   window.addEventListener("scroll", colorChange);
   return (
@@ -39,29 +55,41 @@ const Header = () => {
             <li>
               <a href="">Marine</a>{" "}
             </li>
-            <li className="" onClick={() => setIsRecOpen(!isRecOpen)}>
+            <li
+              className=""
+              onClick={(e) => {
+                e.stopPropagation(); 
+                setIsRecOpen(!isRecOpen);
+              }}
+            >
               Company
             </li>
           </ul>
 
           <section
             // need smooth translate from top till full height
+            ref={sidebarRef}
             className={`floating-nav ${
               isRecOpen ? "isOpenStyle" : "isNotOpenStyle"
             }`}
           >
             {/* 
             1. nav responsive DONE
-            2. navclickOutsideNAv
-            3. nav closing majestically DONE GOOD ENOUGH
-            4. nav should be the same size no matter content
-            5. navlinks hover 
-            6. nav confirmed color
+            2. navclickOutsideNAv  DONE
+            3. nav closing majestically DONE
+
+            4. nav should be the same size no matter content DONE GOOD ENOUGH
+            5. navlinks hover DONE
+            6. nav confirmed color DONE
 
             7. services pages with dynamic content
             8. about pages
             9. FAQ page
             10. Contact page with an email
+
+            TOMORROW MORNING
+            11. Responsive navbar
+            12. 
             
             
             */}
@@ -76,15 +104,22 @@ const Header = () => {
                       and lifecycle solutions for the marine and energy markets.
                     </li>
                     <li className="t-20 mt-40">
-                      About <hr />
+                      <a href="/about">
+                        {" "}
+                        About <hr />
+                      </a>
                     </li>
                     <li className="t-20">
-                      Contact Information
-                      <hr />
+                      <a href="/contact">
+                        Contact Information
+                        <hr />
+                      </a>
                     </li>
                     <li className="t-20 ">
-                      FAQs
-                      <hr />
+                      <a href="/faqs">
+                        FAQs
+                        <hr />
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -102,7 +137,9 @@ const Header = () => {
                     <li className="pb-10 pt-20 pl-20">
                       <b>About</b>
                     </li>
-                    <li className="pb-5  pt-5 pl-20">Why Masterminds</li>
+                    <li className="pb-5  pt-5 pl-20">
+                      <a href="">Why Masterminds</a>
+                    </li>
                     <li className="pb-5 pt-5 pl-20">Career Areas</li>
                     <li className="pb-20 pt-5 pl-20">Join Us</li>
                   </ul>
@@ -118,7 +155,7 @@ const Header = () => {
                       </div>
                     </li>
                     <li className="pb-10 pt-20 pl-20">
-                      <b>About</b>
+                      <b>Contact Information</b>
                     </li>
                     <li className="pb-5  pt-5 pl-20">Why Masterminds</li>
                     <li className="pb-5 pt-5 pl-20">Career Areas</li>
@@ -140,7 +177,6 @@ const Header = () => {
                     </li>
                     <li className="pb-5  pt-5 pl-20">Why Masterminds</li>
                     <li className="pb-5 pt-5 pl-20">Career Areas</li>
-                    <li className="pb-20 pt-5 pl-20">Join Us</li>
                   </ul>
                 </div>
               </li>
