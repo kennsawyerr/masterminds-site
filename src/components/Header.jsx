@@ -51,9 +51,9 @@ const Header = () => {
             }`}
           >
             {/* 
-            1. nav responsive
+            1. nav responsive DONE
             2. navclickOutsideNAv
-            3. nav closing majestically
+            3. nav closing majestically DONE GOOD ENOUGH
             4. nav should be the same size no matter content
             5. navlinks hover 
             6. nav confirmed color
@@ -61,7 +61,7 @@ const Header = () => {
             7. services pages with dynamic content
             8. about pages
             9. FAQ page
-            10. Contact page with an email forum
+            10. Contact page with an email
             
             
             */}
