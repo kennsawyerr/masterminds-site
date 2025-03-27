@@ -85,7 +85,7 @@ const Header = () => {
             5. navlinks hover DONE
             6. nav confirmed color DONE
 
-            7. services pages with dynamic content
+            7. services pages with dynamic content DONE
             8. about pages
             9. FAQ page
             10. Contact page with an email
