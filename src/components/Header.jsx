@@ -6,10 +6,15 @@ const Header = () => {
   const [color, setColor] = useState(false);
 
   const sidebarRef = useRef(null);
+  const companyRef = useRef(null);
   const toggleNavbar = () => {
     setOpen(!isOpen);
   };
   const handleClickOutside = (event) => {
+    if (companyRef.current && companyRef.current.contains(event.target)) {
+      return;
+    }
+
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
       setIsRecOpen(false);
     }
@@ -57,17 +62,15 @@ const Header = () => {
             </li>
             <li
               className=""
-              onClick={(e) => {
-                e.stopPropagation(); 
-                setIsRecOpen(!isRecOpen);
-              }}
+              ref={companyRef}
+              onClick={() => setIsRecOpen(!isRecOpen)}
             >
               Company
             </li>
           </ul>
 
           <section
-            // need smooth translate from top till full height
+           
             ref={sidebarRef}
             className={`floating-nav ${
               isRecOpen ? "isOpenStyle" : "isNotOpenStyle"
@@ -89,7 +92,7 @@ const Header = () => {
 
             TOMORROW MORNING
             11. Responsive navbar
-            12. Issue with navClickOutsideNav
+          
             
             
             */}
