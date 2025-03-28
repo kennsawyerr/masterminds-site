@@ -41,7 +41,7 @@ const Header = () => {
   window.addEventListener("scroll", colorChange);
   return (
     <>
-      <section className={color ? "header black" : "header"}>
+      <section className={color ? "header bg-black" : "header"}>
         <div className="nav-flex">
           <ul className={`menubar ${isOpen ? "flex" : "collapse-nav"}`}>
             <li>
@@ -135,7 +135,7 @@ const Header = () => {
                   <ul className="t-16">
                     <li>
                       <div className="nav-about-img">
-                        <img src="fernandina-vessel.jpg" alt="" />
+                        <img src="/fernandina-vessel.jpg" alt="" />
                       </div>
                     </li>
                     <li className="pb-10 pt-20 pl-20">
@@ -155,7 +155,7 @@ const Header = () => {
                   <ul className="t-16">
                     <li>
                       <div className="nav-about-img">
-                        <img src="img-ecdis.webp" alt="" />
+                        <img src="/img-ecdis.webp" alt="" />
                       </div>
                     </li>
                     <li className="pb-10 pt-20 pl-20">
@@ -173,7 +173,7 @@ const Header = () => {
                   <ul className="t-16">
                     <li>
                       <div className="nav-about-img">
-                        <img src="closeups.jpg" alt="" />
+                        <img src="/closeups.jpg" alt="" />
                       </div>
                     </li>
                     <li className="pb-10 pt-20 pl-20">
