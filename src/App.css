@@ -1202,3 +1202,110 @@ nav img {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+
+/* about page */
+
+.about-us {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("/images/hero.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 18px;
+}
+
+/* Sections */
+.mission-section, 
+.vision-section {
+  display: flex;
+  align-items: center;
+  padding: 50px 10%;
+}
+
+.mission-section .text,
+.vision-section .text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.mission-section img, 
+.vision-section img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Services Grid */
+.services-section {
+  text-align: center;
+  padding: 50px 10%;
+}
+
+.services-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+}
+
+/* Call to Action */
+.cta-section {
+  text-align: center;
+  background: #004c8c;
+  color: white;
+  padding: 50px 10%;
+}
+
+.cta-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-section button {
+  background: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
