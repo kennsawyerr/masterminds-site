@@ -209,7 +209,7 @@ const AboutUs = () => {
 
       {/* Vision Section */}
       <section className="vision-section">
-        <img src="/images/vision.jpg" alt="Our Vision" />
+        <img src="/radar-2.jpg" alt="Our Vision" />
         <div className="text">
           <h2>Our Vision</h2>
           <p>
