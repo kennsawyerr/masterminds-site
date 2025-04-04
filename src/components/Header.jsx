@@ -1,4 +1,5 @@
 import { Twirl as Hamburger } from "hamburger-react";
+import { ChevronRight } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -43,10 +44,10 @@ const Header = () => {
     <>
       <section className={color ? "header bg-black" : "header"}>
         <div className="nav-flex">
+          
+            <div className="logo">Masterminds</div>
+          
           <ul className={`menubar ${isOpen ? "flex" : "collapse-nav"}`}>
-            <li>
-              <div className="logo">Masterminds</div>
-            </li>
             <li>
               <a href="">Home</a>{" "}
             </li>
@@ -65,12 +66,14 @@ const Header = () => {
               ref={companyRef}
               onClick={() => setIsRecOpen(!isRecOpen)}
             >
-              Company
+              Company 
+              {/* style chevron to rotate when isRecOpen
+              remove the padding from it  */}
+              <span><ChevronRight/></span>
             </li>
           </ul>
 
           <section
-           
             ref={sidebarRef}
             className={`floating-nav ${
               isRecOpen ? "isOpenStyle" : "isNotOpenStyle"
