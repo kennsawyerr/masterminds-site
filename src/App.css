@@ -839,6 +839,7 @@ a {
 
   .nav-flex {
     width: 100%;
+    flex-direction: column;
   }
 
   /* navigation- floating nav */
