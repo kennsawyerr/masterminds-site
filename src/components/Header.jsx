@@ -44,9 +44,8 @@ const Header = () => {
     <>
       <section className={color ? "header bg-black" : "header"}>
         <div className="nav-flex">
-          
-            <div className="logo">Masterminds</div>
-          
+          <div className="logo">Masterminds</div>
+
           <ul className={`menubar ${isOpen ? "flex" : "collapse-nav"}`}>
             <li>
               <a href="">Home</a>{" "}
@@ -54,7 +53,7 @@ const Header = () => {
             <li>
               <a href="">About</a>
             </li>
-
+            
             <li>
               <a href="">Energy</a>{" "}
             </li>
@@ -66,10 +65,12 @@ const Header = () => {
               ref={companyRef}
               onClick={() => setIsRecOpen(!isRecOpen)}
             >
-              Company 
+              Company
               {/* style chevron to rotate when isRecOpen
               remove the padding from it  */}
-              <span><ChevronRight/></span>
+              <span>
+                <ChevronRight />
+              </span>
             </li>
           </ul>
 
@@ -153,7 +154,7 @@ const Header = () => {
                 </div>
               </li>
 
-{/* //  */}
+              {/* //  */}
               <li className="nav-cards ">
                 <div className="col-flex  bg-color-grey">
                   <ul className="t-16">
