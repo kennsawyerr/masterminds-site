@@ -386,8 +386,6 @@ body {
 
 /* for logo to have a nice transparent bg but be seperate from navbar on mobile i removed the background from here */
 .menubar {
-  /* background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px); */
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -465,7 +463,6 @@ a {
 }
 
 a:hover {
-  /* border-bottom: 2px solid; */
   color: var(--main-col-3);
 }
 
@@ -514,7 +511,6 @@ footer {
 
 .service-grid {
   display: grid;
-  /* grid-template-columns: repeat(3 , auto); */
   grid-template-columns: repeat(auto-fill, minmax(400px, auto));
   gap: 10px;
   padding: 10px;
@@ -602,12 +598,10 @@ img {
 }
 
 .comp-values {
-  /* width: 100%; */
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 2px solid red; */
 }
 
 .comp-values li {
@@ -640,7 +634,6 @@ img {
 .comp-values-hero .textbox {
   width: 70%;
   margin: 0 auto;
-  /* text-align: center; */
 }
 .comp-values-hero .textbox h3 {
   font-size: 43px;
@@ -648,7 +641,6 @@ img {
 
 .comp-values-img {
   flex: 1;
-  /* border: 2px solid blue; */
 }
 .comp-values-img img {
   width: 100%;
@@ -710,7 +702,6 @@ a {
 
 .small-txt {
   display: flex;
-  /* justify-content: space-between; */
   padding: 10px 0;
   justify-content: center;
 }
@@ -761,7 +752,6 @@ a {
 .grid-item {
   position: relative;
   overflow: hidden;
-  /* border: 1px solid; */
   text-decoration: none;
 }
 
@@ -778,14 +768,12 @@ a {
   top: 0px;
   width: 100%;
   left: 0px;
-  /* background: rgba(0, 0, 0, 0.6); */
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
   color: white;
   padding: 8px;
 }
 .service-txt-box {
   padding: 30px;
-  /* border: 2px solid red; */
 }
 
 .grid-no-one {
@@ -837,9 +825,7 @@ footer section {
   display: flex;
   align-items: top;
   padding: 50px 0px 20px;
-  /* justify-content: space-between; */
   justify-content: space-between;
-  /* border: 2px solid yellow; */
   line-height: 2;
   width: 100%;
 }
@@ -1083,7 +1069,7 @@ nav img {
 }
 
 @media screen and (max-width: 900px) {
- .menubar {
+  .menubar {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -1141,7 +1127,7 @@ nav img {
   .collapse-nav {
     display: none;
     /* transition: 0.5s; */
-     transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .cards {
@@ -1234,7 +1220,7 @@ nav img {
     right: 0;
     top: 70px;
     max-width: 100%;
-     transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .logo {
