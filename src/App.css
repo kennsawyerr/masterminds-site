@@ -339,14 +339,11 @@ body {
   text-align: center;
 }
 
-
 .floating-nav {
   position: fixed;
   top: 48px;
   right: 10%;
   left: 10%;
-  /* max-height: 0; */
-  /* max-width: 80%; */
   background-color: white;
   color: black;
   width: fit-content;
@@ -691,7 +688,6 @@ a {
   text-decoration: underline;
 }
 
-
 .tab-btn {
   cursor: pointer;
 }
@@ -847,7 +843,6 @@ footer section {
   line-height: 2;
   width: 100%;
 }
-
 
 .tb {
   border: 2px solid green;
@@ -1088,21 +1083,23 @@ nav img {
 }
 
 @media screen and (max-width: 900px) {
-  .menubar {
+ .menubar {
     display: flex;
     flex-direction: column;
     position: absolute;
     z-index: 90;
     width: 100%;
+    height: fit-content;
     margin: 0 auto;
     border-radius: unset;
     background-color: white;
+    overflow: hidden;
     color: black;
     left: 0;
     right: 0;
     top: 70px;
     max-width: 100%;
-    transition: 0.5s;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .grid li {
@@ -1127,6 +1124,9 @@ nav img {
 
   #hamburger-menu {
     display: block;
+    position: absolute;
+    left: 5%;
+    top: 12%;
   }
 
   .contact-btn {
@@ -1140,7 +1140,8 @@ nav img {
 
   .collapse-nav {
     display: none;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+     transition: max-height 0.3s ease-in-out;
   }
 
   .cards {
@@ -1223,15 +1224,17 @@ nav img {
     position: absolute;
     z-index: 90;
     width: 100%;
+    height: fit-content;
     margin: 0 auto;
     border-radius: unset;
     background-color: white;
+    overflow: hidden;
     color: black;
     left: 0;
     right: 0;
     top: 70px;
     max-width: 100%;
-    transition: 0.5s;
+     transition: max-height 0.3s ease-in-out;
   }
 
   .logo {
@@ -1252,26 +1255,26 @@ nav img {
   .nav-flex {
     width: 100%;
     /* position: absolute; putting absolute doesnt allow it display on small screens*/
-    
+
     flex-direction: column;
   }
 
-  .floater >.nav-flex > .nav-cards{
-   background-color: #eef0f2;
+  .floater > .nav-flex > .nav-cards {
+    background-color: #eef0f2;
   }
 
-  .floater > .nav-flex{
+  .floater > .nav-flex {
     width: 100%;
   }
   /* navigation- floating nav */
   .floating-nav {
     position: fixed;
-    top: 370px;
+    top: 355px;
     right: 0%;
     left: 0%;
     background-color: white;
     color: black;
-    width:100%;
+    width: 100%;
     height: fit-content;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
@@ -1295,16 +1298,19 @@ nav img {
     width: 0;
     height: 0;
   }
-  .col-flex li{
+  .col-flex li {
     padding: 0;
     margin: 0;
   }
 
-  .col-flex ul li:nth-child(1){
+  .col-flex ul li:nth-child(1) {
     display: none;
   }
   #hamburger-menu {
     display: block;
+    position: absolute;
+    left: 5%;
+    top: 12%;
   }
 
   .contact-btn {
@@ -1359,7 +1365,6 @@ nav img {
 
   #hamburger-menu {
     visibility: visible;
-    display: block;
   }
   /* #0F172B */
 
@@ -1395,4 +1400,3 @@ nav img {
     padding: 10px 0;
   }
 }
-
